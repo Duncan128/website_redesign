@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clothesline Laundromat</title>
+    <link rel="shortcut icon" href="favicon (1).ico"/>
+</head>
+<style>
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #BEECF2;
+    }
+
+    .wrapper {
+        width: 1500px;
+        height: 900px;
+        border: 1px solid #BEECF2;
+        background: white;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 20px;
+        margin-top: 50px;
+    }
+
+    header {
+        width: 1500px;
+        height: 300px;
+        /*background: chocolate;*/
+        position: relative;
+    }
+
+    .logo {
+        /*background-color: yellow;*/
+        width: 850px;
+        height: 150px;
+    }
+
+    .languages {
+        font-family: Gotham;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 19px;
+        /*text-align: center;*/
+        color: #000000;
+        /*background-color: darkseagreen;*/
+        width: 200px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .el {
+        padding-right: 28px;
+    }
+
+    nav {
+        width: 600px;
+        height: 50px;
+        position: absolute;
+        top: 70px;
+        right: 40px;
+        /*background-color: darkorchid;*/
+    }
+
+    .laundromat {
+        float: right;
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        margin-right: 50px;
+        margin-top: -10px;
+        color: #000000;
+    }
+
+    .t2 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 22px;
+        /* or 73% */
+        text-align: center;
+        color: #000000;
+    }
+
+    .ll {
+        /*width: 400px;*/
+        /*margin-top: 67px;*/
+        /*margin-left: -115px;*/
+        position: relative;
+        /*z-index: 500;*/
+    }
+
+    /*.tabs {*/
+    /*    width: 600px;*/
+    /*    height: 150px;*/
+    /*    position: absolute;*/
+    /*    margin: 0 auto;*/
+    /*    padding-top: 100px;*/
+    /*}*/
+
+    a.t2 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        padding-right: 33px;
+    }
+
+    a.t3 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        padding-right: 33px;
+    }
+
+    a.t4 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        padding-right: 33px;
+    }
+
+    a.t5 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    #t1 {
+        font-family: Gotham;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        /* or 144% */
+        text-align: center;
+        position: absolute;
+        width: 880px;
+        height: 250px;
+        padding-top: 30px;
+        padding-left: 15px;
+        color: #000000;
+
+    }
+
+
+    #hoursinfo {
+        font-family: Gotham;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+
+        line-height: 26px;
+        /* or 122% */
+        text-align: center;
+        color: #000000;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #locationinfo {
+        font-family: Gotham;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        /* or 73% */
+        text-align: center;
+        color: #000000;
+        padding-top: 30px;
+
+    }
+
+    .lefcol {
+        width: 150px;
+        height: 350px;
+        position: relative;
+        top: -55px;
+        left: 65px;
+        /*background-color: darkseagreen;*/
+    }
+
+    .main {
+        width: 915px;
+        height: 600px;
+        position: absolute;
+        top: 250px;
+        left: 290px;
+        /*background-color: darkorchid;*/
+    }
+
+    .rightcol {
+        width: 150px;
+        height: 350px;
+        position: absolute;
+        top: -55px;
+        left: 65px;
+        /*background-color: darkseagreen;*/
+    }
+
+    .icon1 {
+        padding-left: px;
+        position: relative;
+        background-color: red;
+        margin-top: 300px;
+        margin-left: 1200px;
+    }
+
+    .icon2 {
+        padding-left: 1198px;
+        padding-top: 30px;
+        position: relative;
+    }
+
+    .icon3 {
+        padding-left: 1205px;
+        padding-top: 35px;
+        position: relative;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #9dddf2;
+    }
+
+
+</style>
+<body>
+<div class="wrapper">
+
+    <header>
+        <div class="logo">
+            <div class="ll"><img src="ll.png" width="850px" alt=""/></div>
+            <h2 class="laundromat">Laundromat</h2>
+        </div>
+
+        <div class="languages">
+            <a class="el" href="redesign_page1.html">English</a>
+            <a class="en" href="redesign_page1.html">Español</a>
+        </div>
+
+        <nav>
+            <a class="t2" href="redesign_page2.html">Home</a>
+            <a class="t3" href="redesign_page3.html">Services</a>
+            <a class="t4" href="redesign_page4.html">Contact</a>
+            <a class="t5" href="redesign_page5.html">Location</a>
+        </nav>
+    </header>
+
+    <div class="lefcol">
+        <h2 class="t2">Hours</h2>
+        <p id="hoursinfo">Open Everyday <br> Mon-Fri <br> 6am-11pm <br> Sat-Sun <br> 6am-11pm</p>
+        <h2 class="t2">Location</h2>
+        <p id="locationinfo">1838 Oakdale Ave <br> West St. Paul, <br> MN 55118</p>
+    </div>
+
+    <div class="main">
+
+        <div><img src="Pic_edited2.jpg" height="360" width="915"/></div>
+
+        <p id="t1">Clothesline luandromat has everything you need when it comes to clothes washing. We are a self
+            service laundromat for you to do your laundry on your on time. We have a large number of washers and dryers
+            for personal use including comfortable seating while you wait. we offer an easy to get to location as well
+            as handicap parking. Our mission is to fullfill the needs of those who rely on self service laundromats
+            while
+            providing a safe environment for guests. We strive to create a modern message for our laundromats. We hope
+            all
+            our guests have postitive experience at our facility. Look at the rest of the website for any other
+            information
+            including services, contact, and location.</p>
+    </div>
+
+    <div class="rightcol">
+        <div class="icon1"><img src="icon1.gif" height="100" width="100"/></div>
+        <div class="icon2"><img src="icon2.gif" height="100" width="100"/></div>
+        <div class="icon3"><img src="icon5.gif" height="83" width="83"/></div>
+    </div>
+
+
+</div><!-- END OF WRAPPER -->
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clothesline Laundromat</title>
+    <link rel="shortcut icon" href="favicon (1).ico"/>
+</head>
+<style>
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #BEECF2;
+    }
+
+    .wrapper {
+        width: 1500px;
+        height: 900px;
+        border: 1px solid #BEECF2;
+        background: white;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 20px;
+        margin-top: 50px;
+    }
+
+    header {
+        width: 1500px;
+        height: 300px;
+        /*background: chocolate;*/
+        position: relative;
+    }
+
+    .logo {
+        /*background-color: yellow;*/
+        width: 850px;
+        height: 150px;
+    }
+
+    .languages {
+        font-family: Gotham;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 19px;
+        /*text-align: center;*/
+        color: #000000;
+        /*background-color: darkseagreen;*/
+        width: 200px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .el {
+        padding-right: 28px;
+    }
+
+    nav {
+        width: 600px;
+        height: 50px;
+        position: absolute;
+        top: 70px;
+        right: 40px;
+        /*background-color: darkorchid;*/
+    }
+
+    .laundromat {
+        float: right;
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        margin-right: 50px;
+        margin-top: -10px;
+        color: #000000;
+    }
+
+    .t2 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 22px;
+        /* or 73% */
+        text-align: center;
+        color: #000000;
+    }
+
+    .ll {
+        position: relative;
+    }
+
+    a.t2 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        padding-right: 33px;
+    }
+
+    a.t3 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        padding-right: 33px;
+    }
+
+    a.t4 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        padding-right: 33px;
+    }
+
+    a.t5 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    #t1 {
+        font-family: Gotham;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        /* or 144% */
+        text-align: center;
+        position: absolute;
+        width: 750px;
+        height: 250px;
+        padding-top: 30px;
+        margin-left: 220px;
+        /*background-color: red;*/
+        color: #000000;
+
+    }
+
+    .title {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 300px;
+        color: #000000;
+    }
+
+    .lefcol {
+        width: 150px;
+        height: 350px;
+        position: relative;
+        left: 100px;
+        top: 30px
+        /*background-color: darkseagreen;*/
+    }
+
+    .t2 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        padding-bottom: 30px;
+        margin-left: -10px;
+        /* or 73% */
+        color: #000000;
+    }
+
+    #addyinfo {
+        font-family: Gotham;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        /* or 122% */
+        color: #000000;
+        width: 300px;
+    }
+
+    #hoursinfo {
+        font-family: Gotham;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        /* or 122% */
+        color: #000000;
+        width: 300px;
+    }
+
+    #t1 {
+        font-family: Gotham;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+        margin-left: -2px;
+        /* or 122% */
+        color: #000000;
+        width: 300px;
+    }
+
+    .t3 {
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        padding-top: 150px;
+        padding-bottom: 20px;
+        color: #000000;
+    }
+
+    .map {
+        padding-left: 600px;
+        margin-top: -350px;
+        position: absolute;
+    }
+
+    .link {
+        padding-left: 950px;
+        font-family: Verdana;
+        font-style: normal;
+        font-weight: bold;
+        position: absolute;
+        margin-top: 25px;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #9dddf2;
+    }
+
+    .rec {
+        margin-top: -30px;
+        position: absolute;
+    }
+
+
+</style>
+<body>
+<div class="wrapper">
+
+    <header>
+        <div class="logo">
+            <div class="ll"><img src="ll.png" width="850px" alt=""/></div>
+            <h2 class="laundromat">Laundromat</h2>
+        </div>
+
+        <div class="languages">
+            <a class="el" href="redesign_page1.html">English</a>
+            <a class="en" href="redesign_page1.html">Español</a>
+        </div>
+
+        <nav>
+            <a class="t2" href="redesign_page2.html">Home</a>
+            <a class="t3" href="redesign_page3.html">Services</a>
+            <a class="t4" href="redesign_page4.html">Contact</a>
+            <a class="t5" href="redesign_page5.html">Location</a>
+        </nav>
+    </header>
+
+    <svg class="rec" width="1500" height="610">
+        <rect width="1500" height="610" style="fill: #feff94"/>
+    </svg>
+
+    <div class="lefcol">
+        <h2 class="t2">Address</h2>
+        <p id="addyinfo">1838 Oakdale Ave in West St. Paul, Minnesota 55118</p>
+        <p id="t1">We are located of of Oakdale <br> Ave and Marie Ave E near <br> Peaceful Heights Montessori.</p>
+        <h2 class="t3">Hours</h2>
+        <p id="hoursinfo">Open Everyday <br> Mon-Fri <br> 6am-11pm <br> Sat-Sun <br> 6am-11pm</p>
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.583408784486!2d-93.0717718492651!3d44.89112617899575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f7d49a54419b3d%3A0x62fba43bfb729758!2sClothesline%20Laundromat!5e0!3m2!1sen!2sus!4v1573080064307!5m2!1sen!2sus"
+                width="860" height="550" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+
+
+</div><!-- END OF WRAPPER -->
+
+
+</body>
+</html>
